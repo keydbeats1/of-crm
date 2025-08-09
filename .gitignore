@@ -35,3 +35,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# project specific
+web/.next
+web/node_modules
+electron/node_modules
+web/.env*
+electron/.env*
+node_modules/
+*.log
+.next/
+dist/
