@@ -14,8 +14,10 @@ function createWindow() {
     icon: path.join(__dirname, 'icon.png') // opciono - dodaj ikonu ako je imaš
   })
 
-  // Učitaj Next.js aplikaciju
-  mainWindow.loadURL('http://localhost:3001')
+  // Učitaj Next.js aplikaciju (može biti lokalni ili hosted)
+  const isDev = process.env.NODE_ENV === 'development'
+  const url = isDev ? 'http://localhost:3001' : 'https://your-deployed-app.vercel.app'
+  mainWindow.loadURL(url)
 
   // Otvori DevTools u development modu
   if (process.env.NODE_ENV === 'development') {
