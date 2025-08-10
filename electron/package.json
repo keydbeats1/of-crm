@@ -1,0 +1,14 @@
+{
+  "name": "of-crm-electron",
+  "version": "1.0.0",
+  "description": "OF CRM Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^28.0.0"
+  },
+  "dependencies": {}
+}
